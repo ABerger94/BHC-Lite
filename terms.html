@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Sale – BioDirect Health Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    header {
+      background-color: #0B1D3A;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    nav.desktop-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav.desktop-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav.desktop-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .cart-icon {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cart-icon img {
+      height: 24px;
+    }
+
+    .cart-count {
+      background-color: red;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0B1D3A;
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 200px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+
+    .mobile-nav a {
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mobile-nav a:hover {
+      background-color: #162a4d;
+    }
+
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      color: #0B1D3A;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #0B1D3A;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .mobile-nav.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="Homepage.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+
+    <nav class="desktop-nav">
+      <a href="Homepage.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="services.html">Services</a>
+      <a href="lookup.html">COA Lookup</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Contact</a>
+      <a href="checkout.html" class="cart-icon">
+        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart">
+        <span class="cart-count">0</span>
+      </a>
+    </nav>
+
+    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="Homepage.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="services.html">Services</a>
+      <a href="lookup.html">COA Lookup</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Contact</a>
+      <a href="checkout.html" class="cart-icon">
+        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart" style="height: 20px;">
+        <span class="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Terms of Sale and Service</h1>
+    <h2>1. Research Use Only (RUO)</h2>
+    <p>All products sold by BioDirect Health Club are labeled as <strong>Research Use Only (RUO)</strong>. These products are not intended for human consumption, medical use, veterinary treatment, or diagnostic purposes. By purchasing, the buyer confirms they are a qualified researcher or acting on behalf of a licensed laboratory, university, or research institution.</p>
+
+    <h2>2. Legal Responsibility</h2>
+    <p>The buyer assumes full responsibility for compliance with all applicable laws and regulations in their jurisdiction regarding the purchase, possession, and use of research chemicals. BioDirect Health Club assumes no liability for misuse or unlawful application of any product sold. The buyer agrees to indemnify and hold harmless BioDirect Health Club and its affiliates against any claims arising from misuse or non-compliance.</p>
+
+    <h2>3. No Returns or Refunds</h2>
+    <p>Due to the sensitive nature of the materials, all sales are final. We do not accept returns or offer refunds except in cases of verified damage during shipment or incorrect order fulfillment.</p>
+
+    <h2>4. Product Information</h2>
+    <p>Descriptions and content provided on our website are for informational purposes only and are not intended to encourage, promote, or imply any human use of the products sold.</p>
+
+    <h2>5. Shipping Disclaimer</h2>
+    <p>All products are shipped in accordance with industry best practices. Cold-chain shipping is available for specific peptides upon request. Customers are responsible for ensuring their availability to receive shipments. We are not liable for delays or losses once packages are in the hands of the shipping carrier.</p>
+
+    <h2>6. Modifications</h2>
+    <p>BioDirect Health Club reserves the right to modify these terms at any time without notice. Customers are encouraged to review the Terms of Sale prior to each purchase.</p>
+  </div>
+
+  <footer>
+    <p>© 2025 BioDirect Health Club</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a> |
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const count = localStorage.getItem("cartCount") || 0;
+      document.querySelectorAll(".cart-count").forEach(el => el.textContent = count);
+    });
+  </script>
+
+</body>
+</html>

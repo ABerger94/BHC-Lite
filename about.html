@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – BioDirect Health Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    header {
+      background-color: #0B1D3A;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .logo {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    nav.desktop-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav.desktop-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav.desktop-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .cart-button {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 600;
+      color: #ffffff;
+      margin-left: 10px;
+    }
+
+    .cart-icon {
+      height: 24px;
+      margin-right: 6px;
+    }
+
+    .inverted {
+      filter: invert(1);
+    }
+
+    #cart-count {
+      background: #C43B3B;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0B1D3A;
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 200px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      z-index: 10;
+    }
+
+    .mobile-nav a {
+      color: #ffffff;
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .mobile-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .mobile-cart {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+    }
+
+    .mobile-cart img {
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .mobile-cart span {
+      background: #C43B3B;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .mobile-nav.active {
+        display: flex;
+      }
+    }
+
+    .about-section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .about-section h1 {
+      color: #0B1D3A;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 80px;
+    }
+
+    footer a {
+      color: #0B1D3A;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+      </a>
+    </nav>
+
+    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="services.html">Services</a>
+     
+      <a href="about.html">About</a>
+     
+      </a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h1>About BioDirect Health Club</h1>
+
+    <p><strong>BioDirect Health Club (BHC)</strong> is a U.S.-based research supply company committed to delivering high-quality peptides for research use only (RUO). Founded on the principles of scientific rigor, transparency, and quality assurance, we’re here to support your work—whether you’re running trials, exploring novel pathways, or testing compound interactions.</p>
+
+    <p>We believe that access to clean, verified research materials should never be a barrier to discovery. That’s why all our RUO products are:</p>
+
+    <ul style="padding-left: 20px;">
+      <li>Lyophilized, purity-tested, and handled under clean manufacturing conditions</li>
+      <li>Delivered with batch-specific COAs and tamper-sealed packaging</li>
+      <li>Manufactured and fulfilled by experts who understand the research process</li>
+    </ul>
+
+    <p>Whether you're a scientist in a lab or a clinical researcher preparing for pre-clinical development, our mission is simple: <strong>empower your research with performance-backed, consistent compounds—delivered on time and with full transparency.</strong></p>
+
+    <p>Welcome to BioDirect Health Club. Pure Wellness. Proven Performance.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 BioDirect Health Club</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Sale & Service</a> |
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+</body>
+</html>

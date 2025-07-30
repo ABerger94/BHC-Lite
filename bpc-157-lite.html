@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>BPC-157 – BioDirect Health Club</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BioDirect Health Club's BPC-157: 5mg lyophilized peptide, ≥99% purity, third-party verified. For research use only.">
-  <meta name="keywords" content="BPC-157, research peptide, RUO, lyophilized peptide, BioDirect Health Club, 5mg BPC">
-  <meta name="author" content="BioDirect Health Club">
-
-  <meta property="og:title" content="BPC-157 – BioDirect Health Club">
-  <meta property="og:description" content="Premium research-use-only BPC-157, tested ≥99% purity, now available.">
-  <meta property="og:image" content="https://biodirectlabs.netlify.app/images/BPC-157.png">
-  <meta property="og:url" content="https://biodirectlabs.netlify.app/bpc157-lite.html">
-  <meta property="og:type" content="product">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BPC-157 – BioDirect Health Club">
-  <meta name="twitter:description" content="Premium RUO BPC-157, third-party verified and ready for research.">
-  <meta name="twitter:image" content="https://biodirectlabs.netlify.app/images/BPC-157.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BioDirect Health Club's BPC-157: 5mg lyophilized peptide, ≥99% purity, third-party verified. For research use only." />
+  <meta name="keywords" content="BPC-157, research peptide, RUO, lyophilized peptide, BioDirect Health Club, 5mg BPC" />
+  <meta name="author" content="BioDirect Health Club" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -26,26 +16,126 @@
       color: #0B1D3A;
     }
 
+    /* HEADER & NAV */
     header {
       background-color: #0B1D3A;
-      padding: 30px 20px;
+      color: white;
+      padding: 20px 30px;
+      position: relative;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0 auto;
       text-align: center;
     }
 
-    header h1 {
+    .subheading {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
       color: #ffffff;
-      margin: 0;
-      font-size: 2em;
     }
 
+    nav.desktop-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    nav.desktop-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav.desktop-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0B1D3A;
+      position: absolute;
+      top: 100%;
+      right: 30px;
+      width: 200px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+
+    .mobile-nav a {
+      color: #ffffff;
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .mobile-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .header-inner {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .header-title {
+        font-size: 1.5em;
+      }
+    }
+
+    /* PRODUCT SECTION */
     .product-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
-      gap: 50px;
-      padding: 60px 20px 40px;
-      max-width: 1200px;
+      padding: 50px 20px;
+      gap: 40px;
+      max-width: 1100px;
       margin: auto;
     }
 
@@ -59,8 +149,8 @@
       width: 100%;
       height: auto;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .carousel {
@@ -71,15 +161,13 @@
 
     .carousel img {
       height: 60px;
-      width: auto;
       border-radius: 6px;
       cursor: pointer;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
     }
 
     .carousel img:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     .product-details {
@@ -89,15 +177,26 @@
 
     .product-details h2 {
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .coming-soon {
+      background-color: #BDC3C7;
+      color: #0B1D3A;
+      font-weight: 700;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-bottom: 30px;
     }
 
     .tabs {
       display: flex;
-      flex-wrap: wrap;
       gap: 10px;
-      border-bottom: 2px solid #eee;
       margin-bottom: 20px;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #eee;
     }
 
     .tab {
@@ -128,45 +227,57 @@
       display: block;
     }
 
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        padding: 30px 15px;
+      }
+
+      .product-image, .product-details {
+        max-width: 100%;
+      }
+    }
+
     footer {
-      border-top: 1px solid #ccc;
+      margin-top: 60px;
       padding: 20px;
       text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-top: 60px;
+      font-size: 0.9em;
+      color: #777;
     }
 
     footer a {
       color: #0B1D3A;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
       text-decoration: underline;
     }
 
-    @media (max-width: 768px) {
-      .product-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 15px;
-      }
-
-      .product-image,
-      .product-details {
-        max-width: 100%;
-        width: 100%;
-      }
+    footer a:hover {
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
-
   <header>
-    <h1>BPC-157 – 5mg Lyophilized Peptide</h1>
+    <div class="header-inner">
+      <h1 class="header-title">BioDirect Health Club</h1>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+    <p class="subheading">Reserve Your Research Peptides – Batch 001 Drops Soon!</p>
   </header>
 
   <main class="product-container">
@@ -181,6 +292,7 @@
 
     <div class="product-details">
       <h2>$39.99</h2>
+      <div class="coming-soon">Coming Soon</div>
 
       <div class="tabs">
         <button class="tab active" onclick="showTab('overview')">Overview</button>
@@ -190,9 +302,8 @@
       </div>
 
       <div id="overview" class="tab-content active">
-        <p><strong>BPC-157</strong> is a synthetic pentadecapeptide derived from a protective gastric protein. It’s been studied for its remarkable tissue-repairing properties in muscle, ligament, tendon, nerve, and intestinal injury models.</p>
-        <p>Backed by decades of academic and clinical interest, BPC-157 has shown promise in accelerating angiogenesis, reducing inflammation, and supporting cellular regeneration across multiple biological systems.</p>
-        <p>All BioDirect products are rigorously batch-tested and packaged with tamper-resistant vials. This peptide is strictly for laboratory research use only.</p>
+        <p><strong>BPC-157</strong> is a synthetic pentadecapeptide derived from a protective gastric protein. It’s been studied for its tissue-repairing properties in muscle, ligament, tendon, nerve, and intestinal injury models.</p>
+        <p>It supports angiogenesis, reduces inflammation, and aids cellular regeneration. Strictly for laboratory research only.</p>
       </div>
 
       <div id="coa" class="tab-content">
@@ -215,19 +326,19 @@
       </div>
 
       <div id="faq" class="tab-content">
-        <p><strong>Is this for human use?</strong><br>No. All products sold by BioDirect Health Club are strictly intended for research use only (RUO). Not for human or veterinary use.</p>
-        <p><strong>How should I store this?</strong><br>Store lyophilized vials at or below 25°C. After reconstitution, refrigerate and use within 10–14 days for optimal performance.</p>
-        <p><strong>Do you offer COAs?</strong><br>Yes. All lots are accompanied by a digital COA and verification.</p>
+        <p><strong>Is this for human use?</strong><br>No. All products sold by BioDirect Health Club are for research use only (RUO). Not for human or veterinary use.</p>
+        <p><strong>Do you offer COAs?</strong><br>Yes. All lots are accompanied by a digital COA and purity verification.</p>
       </div>
     </div>
   </main>
 
   <footer>
-    <p>© 2025 BioDirect Health Club</p>
     <p>
+      *For Research Use Only. Not for human consumption. This product is not a drug, food, or cosmetic.
+      <br />
+      <a href="about.html">About Us</a> |
       <a href="privacy.html">Privacy Policy</a> |
-      <a href="terms.html">Terms of Service</a> |
-      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Sale & Service</a>
     </p>
   </footer>
 
@@ -247,6 +358,5 @@
       mainImage.alt = thumbnail.alt;
     }
   </script>
-
 </body>
 </html>

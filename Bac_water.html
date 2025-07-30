@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bacteriostatic Water – BioDirect Health Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    header {
+      background-color: #0B1D3A;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .logo {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    nav.desktop-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav.desktop-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav.desktop-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0B1D3A;
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 200px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      z-index: 10;
+    }
+
+    .mobile-nav a {
+      color: #ffffff;
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .mobile-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .mobile-nav.active {
+        display: flex;
+      }
+
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .product-details {
+        max-width: 90%;
+      }
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 60px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-image {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product-details {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .product-details h1 {
+      color: #0B1D3A;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0B1D3A;
+      margin: 20px 0;
+    }
+
+    .coming-soon {
+      background-color: #aaa;
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #eee;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: bold;
+      color: #0B1D3A;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .tab:hover,
+    .tab.active {
+      border-bottom: 3px solid #0B1D3A;
+      background-color: #f8f8f8;
+    }
+
+    .tab-content {
+      display: none;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 80px;
+    }
+
+    footer a {
+      color: #0B1D3A;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="Homepage.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+
+    <nav class="desktop-nav">
+      <a href="Homepage.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="Homepage.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      
+      <a href="about.html">About</a>
+      <a href="support.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <div class="product-image">
+      <img src="bac-water.png" alt="Bacteriostatic Water">
+    </div>
+
+    <div class="product-details">
+      <h1>Bacteriostatic Water – 20mL Vial</h1>
+      <div class="price">$9.99</div>
+      <div class="coming-soon">Coming Soon</div>
+
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('overview')">Overview</button>
+        <button class="tab" onclick="showTab('specs')">Specifications</button>
+        <button class="tab" onclick="showTab('faq')">FAQ</button>
+      </div>
+
+      <div id="overview" class="tab-content active">
+        <p><strong>Bacteriostatic Water (BAC Water)</strong> is sterile water containing 0.9% benzyl alcohol as a bacteriostatic preservative. It is commonly used in research settings to reconstitute lyophilized peptides and compounds.</p>
+        <p>Each 20mL multi-dose vial is sealed and labeled for research use only. Not for human or veterinary injection or consumption.</p>
+      </div>
+
+      <div id="specs" class="tab-content">
+        <p><strong>Volume:</strong> 20mL per vial<br>
+        <strong>Preservative:</strong> 0.9% Benzyl Alcohol<br>
+        <strong>Container:</strong> Sterile glass vial, tamper-evident<br>
+        <strong>Application:</strong> Peptide reconstitution (RUO only)<br>
+        <strong>Storage:</strong> Store at 15–25°C, protect from light</p>
+      </div>
+
+      <div id="faq" class="tab-content">
+        <p><strong>Can I inject this?</strong><br>
+        No. This product is strictly for <strong>laboratory research use only (RUO)</strong> and is not intended for injection or medical applications.</p>
+
+        <p><strong>What’s the shelf life?</strong><br>
+        Unopened: 18–24 months. Once accessed, use within 28 days if stored properly.</p>
+
+        <p><strong>What’s the difference between sterile and bacteriostatic water?</strong><br>
+        Bacteriostatic water contains a preservative (benzyl alcohol), allowing it to be used for multiple withdrawals in a sterile research environment.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 BioDirect Health Club</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Sale & Service</a> |
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+      document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
