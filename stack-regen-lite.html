@@ -4,36 +4,73 @@
   <meta charset="UTF-8" />
   <title>Regeneration Stack – BioDirect Health Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Regeneration Stack – BPC-157 + TB-500 + MOTS-c research peptide blend." />
+  <meta name="keywords" content="Regeneration Stack, BPC-157, TB-500, MOTS-c, research peptides, BioDirect Health Club" />
+  <meta name="author" content="BioDirect Health Club" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
-      color: #111;
+      color: #0B1D3A;
     }
 
     header {
       background-color: #0B1D3A;
+      color: white;
       padding: 20px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       position: relative;
     }
 
-    .logo {
-      height: 50px;
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .subheading {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ffffff;
     }
 
     nav.desktop-nav {
-      display: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    nav.desktop-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav.desktop-nav a:hover {
+      color: #BDC3C7;
     }
 
     .menu-toggle {
-      display: flex;
+      display: none;
       flex-direction: column;
       cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .menu-toggle div {
@@ -41,6 +78,7 @@
       height: 3px;
       background-color: white;
       margin: 4px 0;
+      transition: all 0.3s ease;
     }
 
     .mobile-nav {
@@ -48,8 +86,8 @@
       flex-direction: column;
       background-color: #0B1D3A;
       position: absolute;
-      top: 70px;
-      right: 20px;
+      top: 100%;
+      right: 30px;
       width: 200px;
       border: 1px solid #444;
       border-radius: 4px;
@@ -57,11 +95,15 @@
     }
 
     .mobile-nav a {
+      color: #ffffff;
       padding: 12px 20px;
       border-bottom: 1px solid #333;
-      color: white;
       text-decoration: none;
       font-weight: 600;
+    }
+
+    .mobile-nav a:hover {
+      color: #BDC3C7;
     }
 
     .mobile-nav.active {
@@ -125,23 +167,54 @@
       text-decoration: none;
       margin: 0 8px;
     }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .header-inner {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .header-title {
+        font-size: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="index.html"><img src="logo.png" alt="BioDirect Logo" class="logo"></a>
-    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="header-inner">
+      <h1 class="header-title">BioDirect Health Club</h1>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
+
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+
     <nav class="mobile-nav">
       <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
       <a href="about.html">About</a>
     </nav>
+
+    <p class="subheading">Reserve Your Research Peptides – Batch 001 Drops Soon!</p>
   </header>
 
   <main>

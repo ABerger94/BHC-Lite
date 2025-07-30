@@ -2,35 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us – BioDirect Health Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Learn about BioDirect Health Club – your trusted source for RUO peptides." />
+  <meta name="author" content="BioDirect Health Club" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
-      color: #111;
+      color: #0B1D3A;
     }
 
     header {
       background-color: #0B1D3A;
+      color: white;
       padding: 20px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       position: relative;
     }
 
-    .logo {
-      height: 50px;
-      cursor: pointer;
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .subheading {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ffffff;
     }
 
     nav.desktop-nav {
       display: flex;
       gap: 20px;
       align-items: center;
+      justify-content: center;
+      margin-top: 15px;
     }
 
     nav.desktop-nav a {
@@ -44,36 +61,13 @@
       color: #BDC3C7;
     }
 
-    .cart-button {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      font-weight: 600;
-      color: #ffffff;
-      margin-left: 10px;
-    }
-
-    .cart-icon {
-      height: 24px;
-      margin-right: 6px;
-    }
-
-    .inverted {
-      filter: invert(1);
-    }
-
-    #cart-count {
-      background: #C43B3B;
-      color: white;
-      font-size: 12px;
-      padding: 2px 6px;
-      border-radius: 50%;
-    }
-
     .menu-toggle {
       display: none;
       flex-direction: column;
       cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .menu-toggle div {
@@ -81,7 +75,6 @@
       height: 3px;
       background-color: white;
       margin: 4px 0;
-      transition: all 0.3s ease;
     }
 
     .mobile-nav {
@@ -89,12 +82,12 @@
       flex-direction: column;
       background-color: #0B1D3A;
       position: absolute;
-      top: 80px;
+      top: 100%;
       right: 30px;
       width: 200px;
       border: 1px solid #444;
       border-radius: 4px;
-      z-index: 10;
+      z-index: 1000;
     }
 
     .mobile-nav a {
@@ -109,24 +102,8 @@
       color: #BDC3C7;
     }
 
-    .mobile-cart {
+    .mobile-nav.active {
       display: flex;
-      align-items: center;
-      padding: 12px 20px;
-      border-bottom: 1px solid #333;
-    }
-
-    .mobile-cart img {
-      height: 24px;
-      margin-right: 8px;
-    }
-
-    .mobile-cart span {
-      background: #C43B3B;
-      color: white;
-      font-size: 12px;
-      padding: 2px 6px;
-      border-radius: 50%;
     }
 
     @media (max-width: 768px) {
@@ -138,13 +115,13 @@
         display: flex;
       }
 
-      .mobile-nav.active {
-        display: flex;
+      .header-title {
+        font-size: 1.5em;
       }
     }
 
     .about-section {
-      padding: 80px 20px;
+      padding: 60px 20px;
       max-width: 900px;
       margin: 0 auto;
       text-align: left;
@@ -161,6 +138,12 @@
       line-height: 1.6;
       margin-bottom: 20px;
       color: #333;
+    }
+
+    .about-section ul {
+      padding-left: 20px;
+      color: #333;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -187,31 +170,30 @@
 <body>
 
   <header>
-    <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+    <div class="header-inner">
+      <h1 class="header-title">BioDirect Health Club</h1>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
 
     <nav class="desktop-nav">
       <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
       <a href="about.html">About</a>
-      </a>
     </nav>
-
-    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
 
     <nav class="mobile-nav">
       <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
-     
       <a href="about.html">About</a>
-     
-      </a>
     </nav>
+
+    <p class="subheading">Reserve Your Research Peptides – Batch 001 Drops Soon!</p>
   </header>
 
   <section class="about-section">
@@ -221,7 +203,7 @@
 
     <p>We believe that access to clean, verified research materials should never be a barrier to discovery. That’s why all our RUO products are:</p>
 
-    <ul style="padding-left: 20px;">
+    <ul>
       <li>Lyophilized, purity-tested, and handled under clean manufacturing conditions</li>
       <li>Delivered with batch-specific COAs and tamper-sealed packaging</li>
       <li>Manufactured and fulfilled by experts who understand the research process</li>
