@@ -124,6 +124,15 @@
       .header-title {
         font-size: 1.5em;
       }
+
+      .product-container {
+        flex-direction: column;
+        padding: 30px 15px;
+      }
+
+      .product-image, .product-details {
+        max-width: 100%;
+      }
     }
 
     .product-container {
@@ -225,17 +234,6 @@
       display: block;
     }
 
-    @media (max-width: 768px) {
-      .product-container {
-        flex-direction: column;
-        padding: 30px 15px;
-      }
-
-      .product-image, .product-details {
-        max-width: 100%;
-      }
-    }
-
     footer {
       margin-top: 60px;
       padding: 20px;
@@ -263,18 +261,21 @@
         <div></div><div></div><div></div>
       </div>
     </div>
+
     <nav class="desktop-nav">
       <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
       <a href="about.html">About</a>
     </nav>
+
     <nav class="mobile-nav">
       <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
       <a href="about.html">About</a>
     </nav>
+
     <p class="subheading">Reserve Your Research Peptides</p>
     <p class="subheading">Batch 001 Drops Soon!</p>
   </header>

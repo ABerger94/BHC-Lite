@@ -34,6 +34,7 @@
       font-size: 1.8em;
       margin: 0 auto;
       text-align: center;
+      color: #ffffff;
     }
 
     .subheading {
@@ -125,6 +126,10 @@
       .header-title {
         font-size: 1.5em;
       }
+
+      .mobile-nav.active {
+        display: flex;
+      }
     }
 
     .about-section {
@@ -178,9 +183,7 @@
     <div class="header-inner">
       <h1 class="header-title">BioDirect Health Club</h1>
       <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
       </div>
     </div>
 
