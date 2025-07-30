@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BPC-157 – BioDirect Health Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BioDirect Health Club's BPC-157: 5mg lyophilized peptide, ≥99% purity, third-party verified. For research use only.">
+  <meta name="keywords" content="BPC-157, research peptide, RUO, lyophilized peptide, BioDirect Health Club, 5mg BPC">
+  <meta name="author" content="BioDirect Health Club">
+
+  <meta property="og:title" content="BPC-157 – BioDirect Health Club">
+  <meta property="og:description" content="Premium research-use-only BPC-157, tested ≥99% purity, now available.">
+  <meta property="og:image" content="https://biodirectlabs.netlify.app/images/BPC-157.png">
+  <meta property="og:url" content="https://biodirectlabs.netlify.app/bpc157-lite.html">
+  <meta property="og:type" content="product">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BPC-157 – BioDirect Health Club">
+  <meta name="twitter:description" content="Premium RUO BPC-157, third-party verified and ready for research.">
+  <meta name="twitter:image" content="https://biodirectlabs.netlify.app/images/BPC-157.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #0B1D3A;
+    }
+
+    header {
+      background-color: #0B1D3A;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #ffffff;
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+      padding: 60px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-image {
+      flex: 1;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .carousel img {
+      height: 60px;
+      width: auto;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.1);
+    }
+
+    .product-details {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .product-details h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 2px solid #eee;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: bold;
+      color: #0B1D3A;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .tab:hover,
+    .tab.active {
+      border-bottom: 3px solid #0B1D3A;
+      background-color: #f8f8f8;
+    }
+
+    .tab-content {
+      display: none;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #0B1D3A;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px;
+      }
+
+      .product-image,
+      .product-details {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>BPC-157 – 5mg Lyophilized Peptide</h1>
+  </header>
+
+  <main class="product-container">
+    <div class="product-image">
+      <img id="mainImage" src="bpc-157.png" alt="Main View" class="main-image" />
+      <div class="carousel">
+        <img src="bpc-157.png" alt="BPC Vial" onclick="changeMainImage(this)">
+        <img src="label-bpc.png" alt="Label Front" onclick="changeMainImage(this)">
+        <img src="sample-coa.png" alt="Sample COA" onclick="changeMainImage(this)">
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h2>$39.99</h2>
+
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('overview')">Overview</button>
+        <button class="tab" onclick="showTab('coa')">COA</button>
+        <button class="tab" onclick="showTab('specs')">Specifications</button>
+        <button class="tab" onclick="showTab('faq')">FAQ</button>
+      </div>
+
+      <div id="overview" class="tab-content active">
+        <p><strong>BPC-157</strong> is a synthetic pentadecapeptide derived from a protective gastric protein. It’s been studied for its remarkable tissue-repairing properties in muscle, ligament, tendon, nerve, and intestinal injury models.</p>
+        <p>Backed by decades of academic and clinical interest, BPC-157 has shown promise in accelerating angiogenesis, reducing inflammation, and supporting cellular regeneration across multiple biological systems.</p>
+        <p>All BioDirect products are rigorously batch-tested and packaged with tamper-resistant vials. This peptide is strictly for laboratory research use only.</p>
+      </div>
+
+      <div id="coa" class="tab-content">
+        <p><strong>COA Details:</strong></p>
+        <ul>
+          <li>Purity: ≥99.3% (HPLC)</li>
+          <li>Source: Synthetic</li>
+          <li>Solubility: Soluble in sterile water (pH 4–7)</li>
+          <li>Batch ID: BPC-2407-A</li>
+          <li>Storage: ≤25°C before reconstitution</li>
+        </ul>
+      </div>
+
+      <div id="specs" class="tab-content">
+        <p><strong>Format:</strong> Lyophilized powder<br>
+        <strong>Quantity:</strong> 5mg/vial<br>
+        <strong>Formulation:</strong> ≥99% purity, no additives<br>
+        <strong>Recommended Storage:</strong> Refrigerate post-reconstitution<br>
+        <strong>Verification:</strong> HPLC + Mass Spectrometry Confirmed</p>
+      </div>
+
+      <div id="faq" class="tab-content">
+        <p><strong>Is this for human use?</strong><br>No. All products sold by BioDirect Health Club are strictly intended for research use only (RUO). Not for human or veterinary use.</p>
+        <p><strong>How should I store this?</strong><br>Store lyophilized vials at or below 25°C. After reconstitution, refrigerate and use within 10–14 days for optimal performance.</p>
+        <p><strong>Do you offer COAs?</strong><br>Yes. All lots are accompanied by a digital COA and verification.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 BioDirect Health Club</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a> |
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+      document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    function changeMainImage(thumbnail) {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = thumbnail.src;
+      mainImage.alt = thumbnail.alt;
+    }
+  </script>
+
+</body>
+</html>
