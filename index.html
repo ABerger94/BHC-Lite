@@ -170,6 +170,10 @@
       color: #0B1D3A;
     }
 
+    .subscription-tier h3 {
+      font-size: 2em;
+    }
+
     a.product-link {
       text-decoration: none;
       color: inherit;
@@ -246,11 +250,8 @@
   <header>
     <div class="header-inner">
       <h1 class="header-title">BioDirect Health Club</h1>
-
       <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
       </div>
     </div>
 
@@ -274,10 +275,10 @@
 
   <div class="content">
     <h2>Early Access Preorders</h2>
-<h2>Now Open</h2>
+    <h2>Now Open</h2>
     <p>Secure your spot and get 10% off your first order. Quantities are limited.</p>
 
-<h2>Featured Products</h2>
+    <h2>Featured Products</h2>
 
     <div class="product-list">
       <a href="bpc-157-lite.html" class="product-link">
@@ -311,33 +312,33 @@
           <h3>(Semaglutide)</h3>
           <p>5mg – Weight management research</p>
         </div>
-<br>
-<br>
-<hr>
       </a>
     </div>
-<h2>Monthly Subscriptions</h2>
-<h2>Coming Soon</h2>
-<div class="product-list">
-  <div class="product">
-    <h3>Basic</h3>
-    <p>Access to 1 peptides/month</p>
-    <p>10% discount on all orders</p>
-    <p><strong>$89.99/mo</strong></p>
-  </div>
-  <div class="product">
-    <h3>Plus</h3>
-    <p>Access to 2 peptides/month</p>
-    <p>15% discount + early access</p>
-    <p><strong>$129.99/mo</strong></p>
-  </div>
-  <div class="product">
-    <h3>Pro</h3>
-    <p>Full access to all peptide products</p>
-    <p>20% discount + bonus perks</p>
-    <p><strong>$199.99/mo</strong></p>
-  </div>
-</div>
+
+    <hr>
+
+    <h2>Monthly Subscriptions</h2>
+    <h2>Coming Soon</h2>
+    <div class="product-list">
+      <div class="product subscription-tier">
+        <h3>Basic</h3>
+        <p>Access to 1 peptides/month</p>
+        <p>10% discount on all orders</p>
+        <p><strong>$89.99/mo</strong></p>
+      </div>
+      <div class="product subscription-tier">
+        <h3>Plus</h3>
+        <p>Access to 2 peptides/month</p>
+        <p>15% discount + early access</p>
+        <p><strong>$129.99/mo</strong></p>
+      </div>
+      <div class="product subscription-tier">
+        <h3>Pro</h3>
+        <p>Full access to all peptide products</p>
+        <p>20% discount + bonus perks</p>
+        <p><strong>$199.99/mo</strong></p>
+      </div>
+    </div>
 
     <form name="contact" method="POST" data-netlify="true" class="contact-form">
       <input type="hidden" name="form-name" value="contact" />
