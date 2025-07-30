@@ -94,31 +94,50 @@
       color: inherit;
     }
 
-    form {
-      margin-top: 30px;
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
     }
 
-    input[type="email"] {
+    .contact-form label {
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
       padding: 10px;
-      width: 70%;
-      max-width: 300px;
-      border: 1px solid #BDC3C7;
-      border-radius: 5px;
-      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
     }
 
-    button {
-      padding: 10px 20px;
-      margin-left: 10px;
-      font-size: 1em;
+    .contact-form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .contact-form button {
       background-color: #0B1D3A;
-      color: white;
+      color: #ffffff;
+      padding: 12px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
-    button:hover {
+    .contact-form button:hover {
       background-color: #09152b;
     }
 
@@ -136,14 +155,8 @@
         align-items: center;
       }
 
-      input[type="email"] {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-
-      button {
-        margin-left: 0;
-        width: 100%;
+      .contact-form {
+        width: 90%;
       }
     }
   </style>
@@ -194,21 +207,22 @@
       </a>
     </div>
 
-    <!-- ✅ Netlify Form -->
-    <form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact" />
+    <!-- ✅ Netlify-compatible styled contact form -->
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
 
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
-  <button type="submit">Send</button>
-</form>
+      <button type="submit">Send</button>
+    </form>
+
   </div>
 
   <footer>
