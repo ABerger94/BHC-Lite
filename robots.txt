@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://biodirectlabs.netlify.app/sitemap.xml
+Sitemap: https://aberger94.github.io/BHC-Lite/sitemap.xml
