@@ -6,12 +6,6 @@
   <title>Terms of Sale – BioDirect Health Club</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-.header-title {
-  font-size: 1.8em;
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff; /* explicitly white */
-}
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -37,6 +31,7 @@
       font-size: 1.8em;
       margin: 0 auto;
       text-align: center;
+      color: #ffffff;
     }
 
     .subheading {
@@ -119,12 +114,12 @@
         display: flex;
       }
 
-      .mobile-nav.active {
-        display: flex;
-      }
-
       .header-title {
         font-size: 1.5em;
+      }
+
+      .mobile-nav.active {
+        display: flex;
       }
     }
 
@@ -144,21 +139,20 @@
     }
 
     footer {
-      border-top: 1px solid #ccc;
+      margin-top: 60px;
       padding: 20px;
       text-align: center;
-      font-size: 14px;
-      color: #666;
+      font-size: 0.9em;
+      color: #777;
     }
 
     footer a {
       color: #0B1D3A;
-      text-decoration: none;
-      margin: 0 10px;
+      text-decoration: underline;
     }
 
     footer a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -167,34 +161,32 @@
   <header>
     <div class="header-inner">
       <h1 class="header-title">BioDirect Health Club</h1>
-
       <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
       </div>
     </div>
 
     <nav class="desktop-nav">
-      <a href="index.html">Home</a>
+      <a href="Homepage.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
       <a href="about.html">About</a>
     </nav>
 
     <nav class="mobile-nav">
-      <a href="index.html">Home</a>
+      <a href="Homepage.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
       <a href="about.html">About</a>
     </nav>
 
     <p class="subheading">Reserve Your Research Peptides</p>
-<p class="subheading">Batch 001 Drops Soon!</p>
+    <p class="subheading">Batch 001 Drops Soon!</p>
   </header>
 
   <div class="content">
     <h1>Terms of Sale and Service</h1>
+
     <h2>1. Research Use Only (RUO)</h2>
     <p>All products sold by BioDirect Health Club are labeled as <strong>Research Use Only (RUO)</strong>. These products are not intended for human consumption, medical use, veterinary treatment, or diagnostic purposes. By purchasing, the buyer confirms they are a qualified researcher or acting on behalf of a licensed laboratory, university, or research institution.</p>
 
@@ -215,11 +207,12 @@
   </div>
 
   <footer>
-    <p>© 2025 BioDirect Health Club</p>
     <p>
+      *For Research Use Only. <br>Not for human or veterinary use. This product is not a drug, food, or cosmetic.
+      <br />
+      <a href="about.html">About Us</a> |
       <a href="privacy.html">Privacy Policy</a> |
-      <a href="terms.html">Terms of Service</a> |
-      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Sale & Service</a>
     </p>
   </footer>
 

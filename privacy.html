@@ -2,38 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy – BioDirect Health Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read the Privacy Policy of BioDirect Health Club, outlining our data handling, user rights, and security protocols for research-use-only peptide orders." />
+  <meta name="keywords" content="BioDirect Health Club, Privacy Policy, RUO peptides, personal data, peptide orders, data security, research use only" />
+  <meta name="author" content="BioDirect Health Club" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
-      color: #111;
+      color: #0B1D3A;
       line-height: 1.6;
     }
 
     header {
       background-color: #0B1D3A;
+      color: white;
       padding: 20px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       position: relative;
-      z-index: 1000;
-      flex-wrap: wrap;
     }
 
-    .logo {
-      height: 50px;
-      cursor: pointer;
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0 auto;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .subheading {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ffffff;
     }
 
     nav.desktop-nav {
       display: flex;
       gap: 20px;
       align-items: center;
+      justify-content: center;
+      margin-top: 15px;
     }
 
     nav.desktop-nav a {
@@ -47,29 +66,13 @@
       color: #BDC3C7;
     }
 
-    .cart-icon {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .cart-icon img {
-      height: 24px;
-    }
-
-    .cart-count {
-      background-color: red;
-      color: white;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 2px 6px;
-      border-radius: 50%;
-    }
-
     .menu-toggle {
       display: none;
       flex-direction: column;
       cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .menu-toggle div {
@@ -77,6 +80,7 @@
       height: 3px;
       background-color: white;
       margin: 4px 0;
+      transition: all 0.3s ease;
     }
 
     .mobile-nav {
@@ -84,24 +88,24 @@
       flex-direction: column;
       background-color: #0B1D3A;
       position: absolute;
-      top: 80px;
+      top: 100%;
       right: 30px;
       width: 200px;
-      border-radius: 6px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      z-index: 1000;
     }
 
     .mobile-nav a {
-      color: white;
+      color: #ffffff;
       padding: 12px 20px;
-      text-decoration: none;
       border-bottom: 1px solid #333;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     .mobile-nav a:hover {
-      background-color: #162a4d;
+      color: #BDC3C7;
     }
 
     .mobile-nav.active {
@@ -112,13 +116,23 @@
       nav.desktop-nav {
         display: none;
       }
+
       .menu-toggle {
         display: flex;
       }
+
+      .header-inner {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .header-title {
+        font-size: 1.5em;
+      }
     }
 
-    .container {
-      max-width: 900px;
+    .content {
+      max-width: 800px;
       margin: 60px auto;
       padding: 0 20px;
     }
@@ -136,71 +150,55 @@
     }
 
     footer {
-      border-top: 1px solid #ccc;
-      padding: 30px 20px;
+      margin-top: 60px;
+      padding: 20px;
       text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-top: 80px;
+      font-size: 0.9em;
+      color: #777;
     }
 
     footer a {
       color: #0B1D3A;
-      text-decoration: none;
-      margin: 0 10px;
+      text-decoration: underline;
     }
 
     footer a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="Homepage.html"><img src="logo.png" alt="BioDirect Logo" class="logo"></a>
-
-    <nav class="desktop-nav">
-      <a href="Homepage.html">Home</a>
-      <a href="BHC_Products_Page.html">Products</a>
-      <a href="Stacks.html">Stacks</a>
-      <a href="services.html">Services</a>
-      <a href="lookup.html">COA Lookup</a>
-      <a href="about.html">About</a>
-      <a href="support.html">Contact</a>
-      <a href="checkout.html" class="cart-icon">
-        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart">
-        <span class="cart-count">0</span>
-      </a>
-    </nav>
-
-    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="header-inner">
+      <h1 class="header-title">BioDirect Health Club</h1>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div><div></div><div></div>
+      </div>
     </div>
 
-    <nav class="mobile-nav">
-      <a href="Homepage.html">Home</a>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
-      <a href="services.html">Services</a>
-      <a href="lookup.html">COA Lookup</a>
       <a href="about.html">About</a>
-      <a href="support.html">Contact</a>
-      <a href="checkout.html" class="cart-icon">
-        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart" style="height: 20px;">
-        <span class="cart-count">0</span>
-      </a>
     </nav>
+
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <p class="subheading">Reserve Your Research Peptides</p>
+    <p class="subheading">Batch 001 Drops Soon!</p>
   </header>
 
-  <div class="container">
+  <div class="content">
     <h1>Privacy Policy</h1>
 
-    <p>
-      BioDirect Health Club is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website or interact with our services.
-    </p>
+    <p>BioDirect Health Club is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website or interact with our services.</p>
 
     <h2>1. Information We Collect</h2>
     <ul>
@@ -217,19 +215,13 @@
     </ul>
 
     <h2>3. Data Security</h2>
-    <p>
-      We use secure third-party platforms for payment processing and encrypted data handling. Access to personal information is limited to authorized personnel only.
-    </p>
+    <p>We use secure third-party platforms for payment processing and encrypted data handling. Access to personal information is limited to authorized personnel only.</p>
 
     <h2>4. Cookies & Tracking</h2>
-    <p>
-      We may use cookies to personalize your experience and analyze website usage. You can disable cookies in your browser settings.
-    </p>
+    <p>We may use cookies to personalize your experience and analyze website usage. You can disable cookies in your browser settings.</p>
 
     <h2>5. Third-Party Services</h2>
-    <p>
-      We may share necessary information with trusted vendors (e.g., shipping, payment processors) to complete your transaction. We do not sell or rent your personal data.
-    </p>
+    <p>We may share necessary information with trusted vendors (e.g., shipping, payment processors) to complete your transaction. We do not sell or rent your personal data.</p>
 
     <h2>6. Your Rights</h2>
     <ul>
@@ -239,9 +231,7 @@
     </ul>
 
     <h2>7. Policy Updates</h2>
-    <p>
-      We may update this Privacy Policy periodically. The latest revision date will be noted here. Continued use of our site constitutes acceptance of any changes.
-    </p>
+    <p>We may update this Privacy Policy periodically. The latest revision date will be noted here. Continued use of our site constitutes acceptance of any changes.</p>
 
     <p><strong>Effective Date:</strong> July 29, 2025</p>
 
@@ -257,13 +247,6 @@
       <a href="terms.html">Terms of Sale & Service</a>
     </p>
   </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const count = localStorage.getItem("cartCount") || 0;
-      document.querySelectorAll(".cart-count").forEach(el => el.textContent = count);
-    });
-  </script>
 
 </body>
 </html>

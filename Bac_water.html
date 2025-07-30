@@ -3,34 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Bacteriostatic Water – BioDirect Health Club</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bacteriostatic Water (20mL vial) for laboratory research. Not for human use. RUO only." />
+  <meta name="author" content="BioDirect Health Club" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
-      color: #111;
+      color: #0B1D3A;
     }
 
     header {
       background-color: #0B1D3A;
+      color: white;
       padding: 20px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       position: relative;
     }
 
-    .logo {
-      height: 50px;
-      cursor: pointer;
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .subheading {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ffffff;
     }
 
     nav.desktop-nav {
       display: flex;
       gap: 20px;
       align-items: center;
+      justify-content: center;
+      margin-top: 15px;
     }
 
     nav.desktop-nav a {
@@ -48,6 +66,9 @@
       display: none;
       flex-direction: column;
       cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .menu-toggle div {
@@ -55,6 +76,7 @@
       height: 3px;
       background-color: white;
       margin: 4px 0;
+      transition: all 0.3s ease;
     }
 
     .mobile-nav {
@@ -62,12 +84,12 @@
       flex-direction: column;
       background-color: #0B1D3A;
       position: absolute;
-      top: 80px;
+      top: 100%;
       right: 30px;
       width: 200px;
       border: 1px solid #444;
       border-radius: 4px;
-      z-index: 10;
+      z-index: 1000;
     }
 
     .mobile-nav a {
@@ -82,6 +104,10 @@
       color: #BDC3C7;
     }
 
+    .mobile-nav.active {
+      display: flex;
+    }
+
     @media (max-width: 768px) {
       nav.desktop-nav {
         display: none;
@@ -91,8 +117,13 @@
         display: flex;
       }
 
-      .mobile-nav.active {
-        display: flex;
+      .header-inner {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .header-title {
+        font-size: 1.5em;
       }
 
       .product-container {
@@ -193,22 +224,20 @@
     }
 
     footer {
-      border-top: 1px solid #ccc;
+      margin-top: 60px;
       padding: 20px;
       text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-top: 80px;
+      font-size: 0.9em;
+      color: #777;
     }
 
     footer a {
       color: #0B1D3A;
-      text-decoration: none;
-      margin: 0 10px;
+      text-decoration: underline;
     }
 
     footer a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -216,30 +245,29 @@
 <body>
 
   <header>
-    <a href="Homepage.html"><img src="logo.png" alt="Logo" class="logo" /></a>
-
-    <nav class="desktop-nav">
-      <a href="Homepage.html">Home</a>
-      <a href="BHC_Products_Page.html">Products</a>
-      <a href="Stacks.html">Stacks</a>
-      <a href="about.html">About</a>
-      <a href="support.html">Contact</a>
-    </nav>
-
-    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="header-inner">
+      <h1 class="header-title">BioDirect Health Club</h1>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div><div></div><div></div>
+      </div>
     </div>
 
-    <nav class="mobile-nav">
-      <a href="Homepage.html">Home</a>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
-      
       <a href="about.html">About</a>
-      <a href="support.html">Contact</a>
     </nav>
+
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <p class="subheading">Reserve Your Research Peptides</p>
+    <p class="subheading">Batch 001 Drops Soon!</p>
   </header>
 
   <main class="product-container">
@@ -284,9 +312,9 @@
     </div>
   </main>
 
-   <footer>
+  <footer>
     <p>
-      *For Research Use Only. <br>Not for human or veterinary use. This product is not a drug, food, or cosmetic.
+      *For Research Use Only.<br>Not for human or veterinary use. This product is not a drug, food, or cosmetic.
       <br />
       <a href="about.html">About Us</a> |
       <a href="privacy.html">Privacy Policy</a> |

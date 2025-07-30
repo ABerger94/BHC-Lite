@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Explore the GLP-1 Analog Stack for advanced metabolic and endocrine research." />
   <meta name="author" content="BioDirect Health Club" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
     body {
@@ -13,6 +14,7 @@
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
       color: #0B1D3A;
+      line-height: 1.6;
     }
 
     header {
@@ -33,6 +35,7 @@
       font-size: 1.8em;
       margin: 0 auto;
       text-align: center;
+      color: #ffffff;
     }
 
     .subheading {
@@ -75,6 +78,7 @@
       height: 3px;
       background-color: white;
       margin: 4px 0;
+      transition: all 0.3s ease;
     }
 
     .mobile-nav {
@@ -113,6 +117,11 @@
 
       .menu-toggle {
         display: flex;
+      }
+
+      .header-inner {
+        flex-direction: row;
+        justify-content: center;
       }
 
       .header-title {
@@ -158,24 +167,25 @@
 
     p {
       font-size: 15px;
-      line-height: 1.6;
       color: #444;
       margin-bottom: 20px;
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       padding: 20px;
       text-align: center;
-      font-size: 14px;
-      color: #666;
-      border-top: 1px solid #ccc;
+      font-size: 0.9em;
+      color: #777;
     }
 
     footer a {
       color: #0B1D3A;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
       text-decoration: none;
-      margin: 0 8px;
     }
   </style>
 </head>
@@ -185,9 +195,7 @@
     <div class="header-inner">
       <h1 class="header-title">BioDirect Health Club</h1>
       <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
       </div>
     </div>
 
@@ -205,7 +213,8 @@
       <a href="about.html">About</a>
     </nav>
 
-    <p class="subheading">Reserve Your Research Peptides – Batch 001 Drops Soon!</p>
+    <p class="subheading">Reserve Your Research Peptides</p>
+    <p class="subheading">Batch 001 Drops Soon!</p>
   </header>
 
   <main>
@@ -228,7 +237,7 @@
     </p>
   </main>
 
-   <footer>
+  <footer>
     <p>
       *For Research Use Only. <br>Not for human or veterinary use. This product is not a drug, food, or cosmetic.
       <br />

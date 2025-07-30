@@ -10,7 +10,7 @@
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
-      color: #111;
+      color: #0B1D3A;
     }
 
     header {
@@ -31,6 +31,7 @@
       font-size: 1.8em;
       margin: 0 auto;
       text-align: center;
+      color: #ffffff;
     }
 
     .subheading {
@@ -73,6 +74,7 @@
       height: 3px;
       background-color: white;
       margin: 4px 0;
+      transition: all 0.3s ease;
     }
 
     .mobile-nav {
@@ -97,7 +99,7 @@
     }
 
     .mobile-nav a:hover {
-      background-color: #162a4d;
+      color: #BDC3C7;
     }
 
     .mobile-nav.active {
@@ -219,7 +221,6 @@
     footer a {
       color: #0B1D3A;
       text-decoration: underline;
-      margin: 0 8px;
     }
 
     footer a:hover {
@@ -235,9 +236,7 @@
       <h1 class="header-title">BioDirect Health Club</h1>
 
       <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
       </div>
     </div>
 
@@ -256,7 +255,7 @@
     </nav>
 
     <p class="subheading">Reserve Your Research Peptides</p>
-<p class="subheading">Batch 001 Drops Soon!</p>
+    <p class="subheading">Batch 001 Drops Soon!</p>
   </header>
 
   <section class="section">
@@ -307,5 +306,6 @@
       <a href="terms.html">Terms of Sale & Service</a>
     </p>
   </footer>
+
 </body>
 </html>
