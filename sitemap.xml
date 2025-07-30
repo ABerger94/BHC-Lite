@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://aberger94.github.io/BHC-Lite/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://biodirectlabs.netlify.app/index.html</loc>
   </url>
   <url>
-    <loc>https://aberger94.github.io/BHC-Lite/bpc-157-lite.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <loc>https://biodirectlabs.netlify.app/about.html</loc>
   </url>
   <url>
-    <loc>https://aberger94.github.io/BHC-Lite/glp-1-lite.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <loc>https://biodirectlabs.netlify.app/privacy.html</loc>
   </url>
   <url>
-    <loc>https://aberger94.github.io/BHC-Lite/motsc-lite.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <loc>https://biodirectlabs.netlify.app/terms.html</loc>
   </url>
   <url>
-    <loc>https://aberger94.github.io/BHC-Lite/tb500-lite.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <loc>https://biodirectlabs.netlify.app/BHC_Products_Page.html</loc>
   </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/Stacks.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/bpc-157-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/tb-500-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/mots-c-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/glp-1-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/Bac_water.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-glp-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-mito-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-recovery-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-regen-lite.html</loc>
+  </url>
+
 </urlset>
