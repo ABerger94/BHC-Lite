@@ -6,6 +6,12 @@
   <title>Terms of Sale – BioDirect Health Club</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+.header-title {
+  font-size: 1.8em;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff; /* explicitly white */
+}
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -15,24 +21,37 @@
 
     header {
       background-color: #0B1D3A;
+      color: white;
       padding: 20px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       position: relative;
-      z-index: 1000;
-      flex-wrap: wrap;
     }
 
-    .logo {
-      height: 50px;
-      cursor: pointer;
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .subheading {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ffffff;
     }
 
     nav.desktop-nav {
       display: flex;
       gap: 20px;
       align-items: center;
+      justify-content: center;
+      margin-top: 15px;
     }
 
     nav.desktop-nav a {
@@ -46,29 +65,13 @@
       color: #BDC3C7;
     }
 
-    .cart-icon {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .cart-icon img {
-      height: 24px;
-    }
-
-    .cart-count {
-      background-color: red;
-      color: white;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 2px 6px;
-      border-radius: 50%;
-    }
-
     .menu-toggle {
       display: none;
       flex-direction: column;
       cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .menu-toggle div {
@@ -83,7 +86,7 @@
       flex-direction: column;
       background-color: #0B1D3A;
       position: absolute;
-      top: 80px;
+      top: 100%;
       right: 30px;
       width: 200px;
       border: 1px solid #444;
@@ -92,20 +95,37 @@
     }
 
     .mobile-nav a {
+      color: #ffffff;
       padding: 12px 20px;
       border-bottom: 1px solid #333;
-      color: white;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     .mobile-nav a:hover {
-      background-color: #162a4d;
+      color: #BDC3C7;
     }
 
     .mobile-nav.active {
       display: flex;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .mobile-nav.active {
+        display: flex;
+      }
+
+      .header-title {
+        font-size: 1.5em;
+      }
     }
 
     .content {
@@ -140,60 +160,37 @@
     footer a:hover {
       text-decoration: underline;
     }
-
-    @media (max-width: 768px) {
-      nav.desktop-nav {
-        display: none;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-
-      .mobile-nav.active {
-        display: flex;
-      }
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="Homepage.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+    <div class="header-inner">
+      <h1 class="header-title">BioDirect Health Club</h1>
 
-    <nav class="desktop-nav">
-      <a href="Homepage.html">Home</a>
-      <a href="BHC_Products_Page.html">Products</a>
-      <a href="Stacks.html">Stacks</a>
-      <a href="services.html">Services</a>
-      <a href="lookup.html">COA Lookup</a>
-      <a href="about.html">About</a>
-      <a href="support.html">Contact</a>
-      <a href="checkout.html" class="cart-icon">
-        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart">
-        <span class="cart-count">0</span>
-      </a>
-    </nav>
-
-    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
 
-    <nav class="mobile-nav">
-      <a href="Homepage.html">Home</a>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
       <a href="BHC_Products_Page.html">Products</a>
       <a href="Stacks.html">Stacks</a>
-      <a href="services.html">Services</a>
-      <a href="lookup.html">COA Lookup</a>
       <a href="about.html">About</a>
-      <a href="support.html">Contact</a>
-      <a href="checkout.html" class="cart-icon">
-        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart" style="height: 20px;">
-        <span class="cart-count">0</span>
-      </a>
     </nav>
+
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <p class="subheading">Reserve Your Research Peptides</p>
+<p class="subheading">Batch 001 Drops Soon!</p>
   </header>
 
   <div class="content">
@@ -225,13 +222,6 @@
       <a href="support.html">Support</a>
     </p>
   </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const count = localStorage.getItem("cartCount") || 0;
-      document.querySelectorAll(".cart-count").forEach(el => el.textContent = count);
-    });
-  </script>
 
 </body>
 </html>
