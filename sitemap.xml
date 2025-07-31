@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Core Pages -->
   <url>
     <loc>https://aberger94.github.io/BHC-Lite/index.html</loc>
   </url>
@@ -22,10 +23,16 @@
     <loc>https://aberger94.github.io/BHC-Lite/bpc-157-lite.html</loc>
   </url>
   <url>
+    <loc>https://aberger94.github.io/BHC-Lite/tb-500-lite.html</loc>
+  </url>
+  <url>
     <loc>https://aberger94.github.io/BHC-Lite/mots-c-lite.html</loc>
   </url>
   <url>
     <loc>https://aberger94.github.io/BHC-Lite/glp-1-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://aberger94.github.io/BHC-Lite/cjc-ipa-lite.html</loc>
   </url>
 
   <!-- Stack Pages -->
@@ -33,13 +40,16 @@
     <loc>https://aberger94.github.io/BHC-Lite/Stacks.html</loc>
   </url>
   <url>
-    <loc>https://aberger94.github.io/BHC-Lite/stack-mito-lite.html</loc>
-  </url>
-  <url>
-    <loc>https://aberger94.github.io/BHC-Lite/stack-glp-lite.html</loc>
-  </url>
-  <url>
     <loc>https://aberger94.github.io/BHC-Lite/stack-recovery-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://aberger94.github.io/BHC-Lite/stack-burn-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://aberger94.github.io/BHC-Lite/stack-advanced-lite.html</loc>
+  </url>
+  <url>
+    <loc>https://aberger94.github.io/BHC-Lite/stack-ultimate-lite.html</loc>
   </url>
 
 </urlset>
