@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CJC-1295 + Ipamorelin – BioDirect Health Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BioDirect Health Club's CJC-1295 (no DAC) + Ipamorelin: 5mg/5mg lyophilized peptide blend, ≥99% purity, third-party verified. For research use only." />
+  <meta name="keywords" content="CJC-1295, Ipamorelin, research peptide, RUO, lyophilized peptide, BioDirect Health Club, GHRH, GHRP, 5mg blend" />
+  <meta name="author" content="BioDirect Health Club" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #0B1D3A;
+    }
+
+    header {
+      background-color: #0B1D3A;
+      color: white;
+      padding: 20px 30px;
+      position: relative;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .subheading {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ffffff;
+    }
+
+    nav.desktop-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    nav.desktop-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav.desktop-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0B1D3A;
+      position: absolute;
+      top: 100%;
+      right: 30px;
+      width: 200px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+
+    .mobile-nav a {
+      color: #ffffff;
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .mobile-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .header-inner {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .header-title {
+        font-size: 1.5em;
+      }
+
+      .product-container {
+        flex-direction: column;
+        padding: 30px 15px;
+      }
+
+      .product-image, .product-details {
+        max-width: 100%;
+      }
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 20px;
+      gap: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .product-image {
+      flex: 1;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .carousel img {
+      height: 60px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+
+    .product-details {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .product-details h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .coming-soon {
+      background-color: #BDC3C7;
+      color: #0B1D3A;
+      font-weight: 700;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #eee;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: bold;
+      color: #0B1D3A;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .tab:hover,
+    .tab.active {
+      border-bottom: 3px solid #0B1D3A;
+      background-color: #f8f8f8;
+    }
+
+    .tab-content {
+      display: none;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    footer a {
+      color: #0B1D3A;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="header-title">BioDirect Health Club</h1>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <p class="subheading">Premium RUO Peptides – Lab-Tested, <br>Lot-Tracked, Ready to Ship</p>
+    <p class="subheading">Order Single Vials, Explore Research Stacks, or Join a Curated Monthly Subscription</p>
+  </header>
+
+  <main class="product-container">
+    <div class="product-image">
+      <img id="mainImage" src="cjc-ipa.jpg" alt="Main View" class="main-image" />
+      <div class="carousel">
+        <img src="cjc-ipa.jpg" alt="CJC+IPA Vial" onclick="changeMainImage(this)">
+        <img src="label-cjc-ipa.jpeg" alt="Label Front" onclick="changeMainImage(this)">
+        <img src="cjcipa-coa-sample.png" alt="Sample COA" onclick="changeMainImage(this)">
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h2>$59.99</h2>
+      <div class="coming-soon">Coming Soon</div>
+
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('overview')">Overview</button>
+        <button class="tab" onclick="showTab('coa')">COA</button>
+        <button class="tab" onclick="showTab('specs')">Specifications</button>
+        <button class="tab" onclick="showTab('faq')">FAQ</button>
+      </div>
+
+      <div id="overview" class="tab-content active">
+        <p><strong>CJC-1295 (no DAC) + Ipamorelin</strong> is a synergistic blend of a growth hormone-releasing hormone (GHRH) analog and a growth hormone secretagogue (GHS). It is studied for its potential to stimulate natural GH release without significant spikes in cortisol or prolactin.</p>
+        <p>This blend is valued for research into body composition, recovery, and sleep quality. For laboratory use only.</p>
+      </div>
+
+      <div id="coa" class="tab-content">
+        <p><strong>COA Details:</strong></p>
+        <ul>
+          <li>Purity: ≥99.2% (HPLC)</li>
+          <li>Ratio: 5mg CJC-1295 (no DAC) + 5mg Ipamorelin</li>
+          <li>Solubility: Soluble in sterile bacteriostatic water</li>
+          <li>Batch ID: CJCIPA-2407-B</li>
+          <li>Storage: Store at ≤25°C before reconstitution</li>
+        </ul>
+      </div>
+
+      <div id="specs" class="tab-content">
+        <p><strong>Format:</strong> Lyophilized powder<br>
+        <strong>Quantity:</strong> 10mg/vial (5mg CJC + 5mg IPA)<br>
+        <strong>Formulation:</strong> ≥99% purity, no fillers<br>
+        <strong>Recommended Storage:</strong> Refrigerate after reconstitution<br>
+        <strong>Verification:</strong> HPLC and Mass Spectrometry Confirmed</p>
+      </div>
+
+      <div id="faq" class="tab-content">
+        <p><strong>Is this for human use?</strong><br>No. All products sold by BioDirect Health Club are for research use only (RUO). Not for human or veterinary use.</p>
+        <p><strong>Do you provide Certificates of Analysis?</strong><br>Yes. Each batch includes a third-party verified COA detailing purity and composition.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      *For Research Use Only.<br>Not for human or veterinary use. This product is not a drug, food, or cosmetic.
+      <br />
+      <a href="about.html">About Us</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Sale & Service</a>
+    </p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+      document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    function changeMainImage(thumbnail) {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = thumbnail.src;
+      mainImage.alt = thumbnail.alt;
+    }
+  </script>
+</body>
+</html>

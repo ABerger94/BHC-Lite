@@ -5,11 +5,10 @@
   <title>BioDirect Health Club | RUO Peptides, Stacks & Subscription Options</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="BioDirect Health Club offers high-purity RUO peptides for research. Shop single peptides, curated stacks, or monthly subscriptions." />
-  <meta name="keywords" content="research peptides, RUO, BPC-157, TB-500, MOTS-c, GLP-1, lyophilized peptides, BioDirect Health Club" />
+  <meta name="keywords" content="research peptides, RUO, BPC-157, TB-500, GLP-1, CJC-1295, Ipamorelin, BioDirect Health Club" />
   <meta name="author" content="BioDirect Health Club" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-
   <style>
     body {
       margin: 0;
@@ -17,35 +16,29 @@
       background-color: #ffffff;
       color: #0B1D3A;
     }
-
-
     header {
       background-color: #0B1D3A;
       color: white;
       padding: 20px 30px;
       position: relative;
     }
-
     .header-inner {
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
     }
-
     .header-title {
       font-size: 1.8em;
       margin: 0 auto;
       text-align: center;
     }
-
     .subheading {
       text-align: center;
       margin-top: 10px;
       font-size: 1em;
       color: #ffffff;
     }
-
     nav.desktop-nav {
       display: flex;
       gap: 20px;
@@ -53,18 +46,15 @@
       justify-content: center;
       margin-top: 15px;
     }
-
     nav.desktop-nav a {
       color: #ffffff;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
-
     nav.desktop-nav a:hover {
       color: #BDC3C7;
     }
-
     .menu-toggle {
       display: none;
       flex-direction: column;
@@ -73,7 +63,6 @@
       right: 0;
       top: 0;
     }
-
     .menu-toggle div {
       width: 25px;
       height: 3px;
@@ -81,7 +70,6 @@
       margin: 4px 0;
       transition: all 0.3s ease;
     }
-
     .mobile-nav {
       display: none;
       flex-direction: column;
@@ -94,7 +82,6 @@
       border-radius: 4px;
       z-index: 1000;
     }
-
     .mobile-nav a {
       color: #ffffff;
       padding: 12px 20px;
@@ -102,41 +89,33 @@
       text-decoration: none;
       font-weight: 600;
     }
-
     .mobile-nav a:hover {
       color: #BDC3C7;
     }
-
     .mobile-nav.active {
       display: flex;
     }
-
     @media (max-width: 768px) {
       nav.desktop-nav {
         display: none;
       }
-
       .menu-toggle {
         display: flex;
       }
-
       .header-inner {
         flex-direction: row;
         justify-content: center;
       }
-
       .header-title {
         font-size: 1.5em;
       }
     }
-
     .content {
       max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
       text-align: center;
     }
-
     .product-list {
       display: flex;
       flex-wrap: wrap;
@@ -144,7 +123,6 @@
       gap: 20px;
       margin-bottom: 40px;
     }
-
     .product {
       border: 1px solid #BDC3C7;
       border-radius: 8px;
@@ -154,95 +132,90 @@
       text-align: center;
       transition: box-shadow 0.3s ease;
     }
-
     .product:hover {
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-
     .product img {
       width: 100px;
       height: 100px;
       object-fit: contain;
       margin-bottom: 10px;
     }
-
     .product h3 {
       margin: 10px 0 5px;
       color: #0B1D3A;
     }
-
-    .subscription-tier h3 {
-      font-size: 2em;
-    }
-
     a.product-link {
       text-decoration: none;
       color: inherit;
     }
+.subscription-tier h3 {
+  font-size: 2em;
+}
 
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #f8f8f8;
-      border-radius: 8px;
-    }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
 
-    .contact-form label {
-      font-weight: 600;
-      text-align: left;
-    }
+.contact-form label {
+  font-weight: 600;
+  text-align: left;
+}
 
-    .contact-form input,
-    .contact-form textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-      width: 100%;
-      box-sizing: border-box;
-    }
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-    .contact-form textarea {
-      resize: vertical;
-      height: 120px;
-    }
+.contact-form textarea {
+  resize: vertical;
+  height: 120px;
+}
 
-    .contact-form button {
-      background-color: #0B1D3A;
-      color: #ffffff;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.contact-form button {
+  background-color: #0B1D3A;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .contact-form button:hover {
-      background-color: #09152b;
-    }
+.contact-form button:hover {
+  background-color: #09152b;
+}
 
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #777;
-    }
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}
 
-    footer a {
-      color: #0B1D3A;
-      text-decoration: underline;
-    }
+footer a {
+  color: #0B1D3A;
+  text-decoration: underline;
+}
 
-    footer a:hover {
-      text-decoration: none;
-    }
+footer a:hover {
+  text-decoration: none;
+}
   </style>
 </head>
 
@@ -297,12 +270,12 @@
           <h3>TB-500</h3>
           <p>5mg – Enhances recovery and endurance</p>
         </div>
-      </a>
-      <a href="mots-c-lite.html" class="product-link">
+  </a>
+      <a href="cjc-ipa-lite.html" class="product-link">
         <div class="product">
-          <img src="mots-c.png" alt="MOTS-c vial" />
-          <h3>MOTS-c</h3>
-          <p>10mg – Metabolic and mitochondrial support</p>
+          <img src="cjc-ipa.jpg" alt="CJC-1295 + Ipamorelin vial" />
+          <h3>CJC-1295 + Ipamorelin</h3>
+          <p>5mg/5mg – GH axis and performance research</p>
         </div>
       </a>
       <a href="glp-1-lite.html" class="product-link">
@@ -326,25 +299,25 @@
           <p>BPC‑157 + TB‑500<br>Targets muscle, tendon, and tissue recovery.</p>
         </div>
       </a>
-      <a href="stack-mito.html" class="product-link">
+      <a href="stack-metabolic.html" class="product-link">
         <div class="product">
-          <img src="stack-mito.jpg" alt="Mito Stack" />
-          <h3>Mito‑Metabolic Stack</h3>
-          <p>MOTS‑c + TB‑500<br>Supports mitochondrial biogenesis and endurance.</p>
+          <img src="stack-metabolic.jpg" alt="Metabolic Burn Stack" />
+          <h3>Metabolic Burn Stack</h3>
+          <p>GLP‑1 + CJC/Ipamorelin<br>Appetite suppression and fat-loss synergy.</p>
         </div>
       </a>
-      <a href="stack-regen.html" class="product-link">
+      <a href="stack-advanced-lite.html" class="product-link">
         <div class="product">
-          <img src="stack-regen.jpg" alt="Regeneration Stack" />
-          <h3>Regeneration Stack</h3>
-          <p>BPC‑157 + TB‑500 + MOTS‑c<br>Advanced cellular repair and inflammation recovery.</p>
+          <img src="stack-advanced.jpg" alt="Advanced Recovery Stack" />
+          <h3>Advanced Recovery Stack</h3>
+          <p>BPC‑157 + TB‑500 + CJC/Ipamorelin<br>Comprehensive hormonal and tissue recovery.</p>
         </div>
       </a>
-      <a href="stack-glp.html" class="product-link">
+      <a href="stack-ultimate-lite.html" class="product-link">
         <div class="product">
-          <img src="stack-glp.jpg" alt="GLP-1 Stack" />
-          <h3>Metabolic Optimization Stack</h3>
-          <p>GLP‑1 Analog + MOTS‑c<br>Metabolic research with longevity potential.</p>
+          <img src="stack-ultimate.jpg" alt="Ultimate Recovery Stack" />
+          <h3>Ultimate Recovery Stack</h3>
+          <p>BPC‑157 + TB‑500 + GLP‑1 + CJC/Ipamorelin<br>Full-spectrum regeneration and recomposition.</p>
         </div>
       </a>
     </div>
